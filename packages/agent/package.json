@@ -1,0 +1,22 @@
+{
+  "name": "agent",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "start": "node --import tsx/esm src/index.ts",
+    "dev": "node --import tsx/esm src/index.ts"
+  },
+  "dependencies": {
+    "ai": "^6.0.173",
+    "aio": "workspace:*",
+    "zod": "^4.4.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2"
+  }
+}

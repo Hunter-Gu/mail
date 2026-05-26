@@ -1,0 +1,27 @@
+{
+  "name": "log-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./src/client.ts",
+  "exports": {
+    ".": "./src/client.ts",
+    "./server": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsup src/index.ts src/client.ts --format esm --clean",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Minimal log receiver that stores AI interaction logs locally",
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}

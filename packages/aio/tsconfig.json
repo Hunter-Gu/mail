@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "types": ["node"],
+    /* Base syntax target */
+    "target": "ES2022",
+    "module": "ESNext",
+
+    /* Module resolution rules: using bundler mode for tsup packaging */
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+
+    /* Strict mode: highly recommended to enable all strict checks */
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type checking only; code generation is handled by tsup */
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "src/backup"]
+}
