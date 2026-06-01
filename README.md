@@ -13,3 +13,4 @@ Each package has its own README with examples and API details.
 - [agent](packages/agent/README.md): Gmail orchestration agents and Gmail client contracts.
 - [cli](packages/cli/README.md): Local terminal runner for the Gmail agent.
 - [log-server](packages/log-server/README.md): Local HTTP log receiver and browser-safe logging client.
+- [wxt](packages/wxt/README.md): Gmail-only browser side panel extension for the mail agent.

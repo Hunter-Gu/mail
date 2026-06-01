@@ -1,0 +1,48 @@
+{
+  "name": "wxt",
+  "description": "Gmail sidebar chat extension for the mail agent.",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.74",
+    "@ai-sdk/google": "^3.0.80",
+    "@base-ui/react": "^1.0.0",
+    "@inboxsdk/core": "^2.2.7",
+    "@radix-ui/react-use-controllable-state": "^1.2.2",
+    "@streamdown/cjk": "^1.0.3",
+    "@streamdown/code": "^1.1.1",
+    "@streamdown/math": "^1.0.2",
+    "@streamdown/mermaid": "^1.0.2",
+    "@tailwindcss/vite": "^4.3.0",
+    "agent": "workspace:*",
+    "ai": "^6.0.185",
+    "aio": "workspace:*",
+    "class-variance-authority": "^0.7.1",
+    "gmail-js": "^1.1.16",
+    "log-server": "workspace:*",
+    "lucide-react": "^0.468.0",
+    "radix-ui": "^1.4.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "shiki": "^4.1.0",
+    "streamdown": "^2.5.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3",
+    "wxt": "^0.20.26"
+  }
+}
